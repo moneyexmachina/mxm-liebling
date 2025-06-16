@@ -1,3 +1,38 @@
+# mxm-liebling
+
+Custom Ghost theme for **Money Ex Machina**, based on [Liebling v2.1.7](https://github.com/eddiesigner/liebling).
+
+---
+
+## 🧾 Overview
+
+This fork introduces the following modifications:
+
+- 💡 Custom color palette (blood red, rich black, outer space, ash grey)
+- ✍️ Custom typography:
+  - Headings: [Playfair Display](https://fonts.google.com/specimen/Playfair+Display)
+  - Body: [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro)
+- 📄 Footer navigation for legal & licensing links
+- 🧱 Clean layout for manifesto posts and publication timeline
+- 🔧 Modular override system via `assets/css/mxm.css`
+- 📦 Version-controlled deployment workflow (from `bridge` to `monolith`)
+
+---
+
+## 🛠 Usage
+
+This repo is maintained as a [GitHub fork](https://github.com/moneyexmachina/mxm-liebling) and developed on `bridge`. It is deployed to `monolith` using a two-stage workflow (staging sync + sudo promotion).
+
+See `mxm-core/docs/notes/mxm-theme-adaptation.md` for full setup and deployment guide.
+
+---
+
+## 🧑‍🎨 Credits & License
+
+This theme is built on the excellent open-source Liebling theme by [Eddie Signer](https://github.com/eddiesigner) and retains full MIT licensing below.
+
+The original README follows.
+
 # Liebling
 
 Liebling is a beautiful and clean Ghost theme that is easy and comfortable to use. **It's free** and you can use it for any kind of content you might have. Now with dark mode 🌓!

@@ -11,6 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     {{!-- Preload assets --}}
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
     <link rel="preload" href="{{asset "css/app.css"}}" as="style" />
     <link rel="preload" href="{{asset "js/manifest.js"}}" as="script" />
     <link rel="preload" href="{{asset "js/vendor.js"}}" as="script" />
@@ -69,9 +71,10 @@
         url("{{asset 'fonts/icomoon/icomoon.svg?101fc3#icomoon'}}") format('svg');
       }
     </style>
-
     <link rel="stylesheet" type="text/css" href="{{asset "css/app.css"}}" media="screen" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="{{asset "css/mxm.css"}}" />
     {{!-- This #block helper will inject a stylesheet for a specific page --}}
     {{{block "styles"}}}
 

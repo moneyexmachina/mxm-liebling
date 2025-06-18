@@ -8,3 +8,67 @@ body {
 .m-site-name {
   font-family: 'Playfair Display', serif !important;
 }
+:root {
+  /* Core brand colors */
+  --mxm-rich-black: #0d171d;
+  --mxm-outer-space: #42565a;
+  --mxm-ash-grey: #aab1a4;
+  --mxm-blood-red: #6b0f0d;
+  --mxm-tomato: #ff5b3f;
+  --mxm-ecru: #c8a97b;
+  --mxm-peach-yellow: #e3c98a;
+  --mxm-light-grey: #efefef;
+
+}
+[data-theme="light"] {
+  --background-color: #fff;
+  --primary-foreground-color: var(--mxm-rich-black);
+  --secondary-foreground-color: var(--mxm-outer-space);
+  --primary-subtle-color: var(--mxm-blood-red);
+  --secondary-subtle-color: var(--mxm-ash-grey);
+  --titles-color: var(--mxm-rich-black);
+  --link-color: var(--mxm-tomato);
+  --primary-border-color: var(--mxm-ash-grey);
+  --secondary-border-color: var(--mxm-peach-yellow);
+  --article-shadow-normal: 0 10px 10px rgba(0, 0, 0, 0.08);
+  --article-shadow-hover: 0 4px 60px 0 rgba(0, 0, 0, 0.2);
+  --transparent-background-color: hsla(0, 0%, 100%, 0.99);
+  --footer-background-color: var(--mxm-outer-space);
+  --submenu-shadow-color-opacity: 0.25;
+  --button-shadow-color-normal: hsla(0, 0%, 42%, 0.2);
+  --button-shadow-color-hover: hsla(0, 0%, 42%, 0.3);
+  --table-background-color-odd: #fafafa;
+  --table-head-border-bottom: #e2e2e2;
+  --toggle-darkmode-button-display-moon: block;
+  --toggle-darkmode-button-display-sun: none;
+  --toggle-darkmode-background-color: rgba(0, 0, 0, 0.05);
+  --header-menu-gradient-first-color: hsla(0, 0%, 100%, 0);
+  --header-menu-gradient-second-color: #fff;
+  --kg-card-img-invert-color: 0;
+}
+[data-theme="dark"] {
+  --background-color: var(--mxm-rich-black);
+  --primary-foreground-color: var(--mxm-light-grey);
+  --secondary-foreground-color: var(--mxm-ash-grey);
+  --primary-subtle-color: var(--mxm-tomato);
+  --secondary-subtle-color: var(--mxm-outer-space);
+  --titles-color: var(--mxm-light-grey);
+  --link-color: var(--mxm-ecru);
+  --primary-border-color: var(--mxm-outer-space);
+  --secondary-border-color: var(--mxm-blood-red);
+  --article-shadow-normal: 0 4px 5px 5px rgba(0, 0, 0, 0.1);
+  --article-shadow-hover: 0 4px 5px 10px rgba(0, 0, 0, 0.1);
+  --transparent-background-color: rgba(0, 0, 0, 0.99);
+  --footer-background-color: var(--mxm-rich-black);
+  --submenu-shadow-color-opacity: 0.55;
+  --button-shadow-color-normal: hsla(0, 0%, 4%, 0.5);
+  --button-shadow-color-hover: hsla(0, 0%, 4%, 0.5);
+  --table-background-color-odd: #050505;
+  --table-head-border-bottom: #1d1d1d;
+  --toggle-darkmode-button-display-moon: none;
+  --toggle-darkmode-button-display-sun: block;
+  --toggle-darkmode-background-color: rgba(0, 0, 0, 0.5);
+  --header-menu-gradient-first-color: hsla(0, 0%, 7%, 0);
+  --header-menu-gradient-second-color: hsla(0, 0%, 7%, 0.65);
+  --kg-card-img-invert-color: 1;
+}

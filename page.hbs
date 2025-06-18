@@ -28,7 +28,13 @@ into the {body} of the default.hbs template --}}
     {{!-- Inject styles of the hero image to make it responsive --}}
     {{> hero background=feature_image}}
     <div class="m-hero__content" data-animate="fade-down">
-      <h1 class="m-hero-title bigger">{{title}}</h1>
+      {{#is "home"}}
+        <h1 class="m-hero-title bigger">
+          <span class="mxm-blood-red">Money</span> ex Machina
+        </h1>
+      {{else}}
+        <h1 class="m-hero-title bigger">{{title}}</h1>
+      {{/is}}
       {{#if custom_excerpt}}
         <p class="m-hero-description">{{custom_excerpt}}</p>
       {{/if}}

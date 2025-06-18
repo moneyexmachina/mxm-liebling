@@ -20,6 +20,10 @@ body {
   --mxm-light-grey: #efefef;
 
 }
+.mxm-blood-red {
+  color: var(--mxm-blood-red);
+}
+
 [data-theme="light"] {
   --background-color: #fff;
   --primary-foreground-color: var(--mxm-rich-black);

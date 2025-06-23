@@ -24,17 +24,25 @@ body {
   color: var(--mxm-blood-red);
 }
 
-.m-footer-social img {
+.m-footer-social {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.m-footer-social svg {
   width: 24px;
   height: 24px;
   vertical-align: middle;
-  filter: brigthness(0) invert(1);
-  color: white;
 }
-.m-footer-social a:hover img {
+
+.m-footer-social a:hover svg {
   opacity: 0.7;
   transition: opacity 0.2s ease;
 }
+
 [data-theme="light"] {
   --background-color: #fff;
   --primary-foreground-color: var(--mxm-rich-black);

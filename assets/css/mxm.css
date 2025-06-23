@@ -29,6 +29,7 @@ body {
   height: 24px;
   vertical-align: middle;
   filter: brigthness(0) invert(1);
+  color: white;
 }
 .m-footer-social a:hover img {
   opacity: 0.7;

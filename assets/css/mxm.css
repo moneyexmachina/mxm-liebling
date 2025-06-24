@@ -42,7 +42,15 @@ body {
   opacity: 0.7;
   transition: opacity 0.2s ease;
 }
+.only-mobile {
+  display: none;
+}
 
+@media only screen and (max-width: 47.99rem) {
+  .only-mobile {
+    display: list-item;
+  }
+}
 [data-theme="light"] {
   --background-color: #fff;
   --primary-foreground-color: var(--mxm-rich-black);

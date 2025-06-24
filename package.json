@@ -3,9 +3,9 @@
     "name": "Dr Pendryck Coinwright",
     "email": "contact@moneyexmachina.com",
   },
+  "members": true,
   "config": {
     "posts_per_page": 10,
-    "enable_members": true,
     "card_assets": {
       "exclude": [
         "bookmark",

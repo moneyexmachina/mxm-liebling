@@ -51,6 +51,38 @@ body {
     display: list-item;
   }
 }
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #222;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  z-index: 1000;
+}
+
+.cookie-banner p {
+  margin: 0;
+  display: inline;
+}
+
+.cookie-banner a {
+  color: #ffd700;
+  text-decoration: underline;
+  margin-left: 0.5em;
+}
+
+.cookie-banner button {
+  margin-left: 1em;
+  padding: 0.3em 1em;
+  background: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
 [data-theme="light"] {
   --background-color: #fff;
   --primary-foreground-color: var(--mxm-rich-black);

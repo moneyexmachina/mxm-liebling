@@ -156,5 +156,22 @@
 
     {{!-- Ghost outputs important scripts and data with this tag --}}
     {{ghost_foot}}
+    <div id="cookie-banner" class="cookie-banner" style="display:none;">
+      <p>We use only essential cookies to enable login and site functionality. No tracking. <a href="/privacy">Learn more</a>.</p>
+      <button id="cookie-accept">OK</button>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+    if (!localStorage.getItem("cookieConsent")) {
+      document.getElementById("cookie-banner").style.display = "block";
+    }
+
+    document.getElementById("cookie-accept").addEventListener("click", function () {
+      localStorage.setItem("cookieConsent", "true");
+      document.getElementById("cookie-banner").style.display = "none";
+    });
+  });
+    </script>
   </body>
 </html>

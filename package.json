@@ -5,6 +5,7 @@
   },
   "config": {
     "posts_per_page": 10,
+    "enable_members": true,
     "card_assets": {
       "exclude": [
         "bookmark",
@@ -46,21 +47,6 @@
         "type": "boolean",
         "default": false
       },
-      "use_custom_cta": {
-        "type": "boolean",
-        "default": false,
-        "group": "homepage"
-      },
-      "custom_cta_text": {
-        "type": "text",
-        "default": "Subscribe",
-        "group": "homepage"
-      },
-      "custom_cta_url": {
-        "type": "text",
-        "default": "/newsletter",
-        "group": "homepage"
-      }
     }
   },
   "demo": "https://liebling.eduardogomez.io",

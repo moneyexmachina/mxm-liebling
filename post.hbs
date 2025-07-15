@@ -66,6 +66,14 @@ into the {body} of the default.hbs template --}}
                   </button>
                 </div>
               </div>
+              {{#has tag="show-toc"}}
+                <div class="m-toc">
+                  <div class="m-toc__content js-sticky">
+                    <aside class="js-toc"></aside>
+                  </div>
+                </div>
+                <script data-enable-toc="true"></script>
+              {{/has}}
               {{content}}
               {{!-- List of tags  --}}
               {{#if tags}}
@@ -200,4 +208,6 @@ into the {body} of the default.hbs template --}}
 {{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
 {{#contentFor "scripts"}}
   <script defer src="{{asset "js/post.js"}}"></script>
+  <script defer src="{{asset "js/tocbot.min.js"}}"></script>
+  <script defer src="{{asset "js/tocbot-init.js"}}"></script>
 {{/contentFor}}

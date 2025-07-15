@@ -82,6 +82,61 @@ body {
   cursor: pointer;
 }
 
+/* Hide TOC on mobile by default */
+@media (max-width: 1023px) {
+  .m-toc { display: none; }
+}
+
+/* Desktop layout: position TOC similarly to .m-share */
+@media (min-width: 48rem) {
+  .m-toc {
+    position: absolute;
+    right: -75px; /* Same horizontal offset as .m-share */
+    top: 0;
+    width: 240px;
+    z-index: 3;
+  }
+
+  @media (min-width: 80rem) {
+    .m-toc { right: -175px; }
+  }
+
+  @media (min-width: 90rem) {
+    .m-toc { right: -200px; }
+  }
+
+  .m-toc__content.js-sticky {
+    position: sticky;
+    top: 100px; /* Matches vertical offset of .m-share */
+    max-height: 80vh;
+    overflow-y: auto;
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+
+  /* TOC list styling */
+  .m-toc__content .toc-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .m-toc__content .toc-list .toc-link {
+    display: block;
+    padding: 0.25em 0;
+    color: var(--primary-foreground-color);
+    text-decoration: none;
+  }
+
+  .m-toc__content .toc-list .toc-link:hover {
+    color: var(--link-color);
+  }
+
+  .m-toc__content .toc-list .is-active-link {
+    font-weight: 600;
+    color: var(--link-color);
+  }
+}
 
 [data-theme="light"] {
   --background-color: #fff;

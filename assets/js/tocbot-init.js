@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tocSelector: '.js-toc',              // the container where TOC will be inserted
     contentSelector: '.js-post-content', // the content block to parse for headings
     headingSelector: 'h2, h3',           // which headings to include
-    collapseDepth: 6,
+    collapseDepth: 1,
     scrollSmooth: true,
     scrollSmoothOffset: 60
   });
